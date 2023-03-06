@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="APISuite">
+    <listeners>
+        <listener class-name="com.api.listener.RetryListener"/>
+        <listener class-name="com.api.listener.TestListener"/>
+    </listeners>
+    <test name="API Suite" preserve-order="true">
+        <packages>
+            <package name="com.api.test.*"/>
+        </packages>
+    </test>
+
+</suite>
+
